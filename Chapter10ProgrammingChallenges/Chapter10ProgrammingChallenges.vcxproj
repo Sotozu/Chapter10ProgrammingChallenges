@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="01 String Length.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="text.txt" />
