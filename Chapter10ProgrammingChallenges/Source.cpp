@@ -491,7 +491,6 @@ char mostFrequent(char* my_arr) {
 			frequent_index = i;
 		}
 	}
-	cout << frequent << endl;
 
 	frequent = unique_arr[frequent_index];
 
@@ -819,7 +818,6 @@ int main() {
 */
 /*
 // 16. Pig Latin
-
 int main() {
 	string user_input;
 	string ay = "AY";
@@ -846,7 +844,7 @@ int main() {
 				if (user_input[j] == ' ' || user_input[j] == '.' || user_input[j] == '!' || user_input[j] == '?' || user_input[j] == ':' || user_input[j] == ';') {
 					switch_b = &user_input[j - 1];
 					user_input[j] = *switch_a;
-					user_input.insert((j+1), 1, ' ');
+					user_input.insert((j + 1), 1, ' ');
 					user_input.erase(i, 1);
 
 
@@ -856,7 +854,7 @@ int main() {
 				if (j == user_input.size() - 1) {
 					if (isalpha(user_input[j])) {
 						user_input.append(1, ' ');
-						user_input[j+1] = *switch_a;
+						user_input[j + 1] = *switch_a;
 						user_input.erase(i, 1);
 						complete = true;
 						break;
@@ -867,16 +865,13 @@ int main() {
 	}
 	for (int i = 0; i < user_input.size(); i++) {
 		if (user_input[i] == ' ' || user_input[i] == '.' || user_input[i] == '!' || user_input[i] == '?' || user_input[i] == ':' || user_input[i] == ';') {
-			cout << "WHAT" << endl;
-			if (isalpha(user_input[i-1])){
-				cout << "1111111111111" << endl;
+			if (isalpha(user_input[i - 1])) {
 				user_input.insert(i, ay);
 				i = i + 2;
 			}
 		}
 		if (i == user_input.size() - 1) {
 			if (isalpha(user_input[i])) {
-				cout << "THE" << endl;
 				user_input.append(ay);
 				break;
 			}
